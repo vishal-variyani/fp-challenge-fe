@@ -1,0 +1,25 @@
+.user-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px 25px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border: 1px solid;
+  margin: 5px;
+}
+
+.user-container p {
+  margin: 5px;
+  font-size: 13px;
+}
+
+.user-name {
+  margin: 0px;
+  color: #71748e;
+  font-weight: bold;
+}

@@ -1,0 +1,36 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  padding: 1rem 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 30px;
+}
+
+.nav-link.active {
+  border-bottom: 5px solid #337ab7;
+}
+
+.content {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
