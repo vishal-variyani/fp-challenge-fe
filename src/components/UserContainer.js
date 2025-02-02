@@ -3,7 +3,10 @@ import "./UserContainer.css";
 
 export default function UserContainer({ user }) {
   return (
-    <div className="user-container">
+    <div
+      className="user-container"
+      onClick={() => window.open(user.html_url, "_blank")}
+    >
       <div>
         <p>User Image</p>
         <img src={user?.avatar_url} alt="user_image" className="avatar" />
