@@ -15,10 +15,21 @@ export default function Header() {
     <Router>
       <div className="app-container">
         <div className="header">
-          <NavLink to="/" className="nav-link" activeClassName="active" end>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              "nav-link" + (isActive ? " active" : "")
+            }
+            end
+          >
             Home
           </NavLink>
-          <NavLink to="/history" className="nav-link" activeClassName="active">
+          <NavLink
+            to="/history"
+            className={({ isActive }) =>
+              "nav-link" + (isActive ? " active" : "")
+            }
+          >
             History
           </NavLink>
         </div>

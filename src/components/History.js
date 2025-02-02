@@ -18,9 +18,9 @@ function History() {
               <span>Search Term</span>
               <span>Search Results</span>
             </div>
-            {searchHistory.map(({ searchTerm, user }) => {
+            {searchHistory.map(({ searchTerm, user }, index) => {
               return (
-                <div className="history-table-data" key={user.id}>
+                <div className="history-table-data" key={index}>
                   <p className="user-name">{searchTerm}</p>
                   {user.id ? (
                     <UserContainer user={user} />
